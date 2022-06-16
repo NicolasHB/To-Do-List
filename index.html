@@ -10,10 +10,30 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body>
-    <h1>Hello-Bootstrap</h1>
-
+  <body class="bg-todolist">
+    <h1 class="text-center">To do list with <span>JS</span></h1>
+    <div class="container d-flex justify-content-center mt-5">
+      <div class="row">
+        <!-- input -->
+        <div class="col-10" id="newtask">
+          <input
+            type="text"
+            class="form-control"
+            id="todo-input"
+            placeholder="Nouvelle tâche..."
+          />
+          <!-- <span class="text-warning" id="error"></span> -->
+        </div>
+        <!-- btn -->
+        <div class="col-2">
+          <button id="push" class="btn btn-primary">Ajouter</button>
+        </div>
+      </div>
+    </div>
+    <!-- <p id="date" class="text-center pt-4 text-white fw-bold"></p> -->
+    <div id="tasks"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
